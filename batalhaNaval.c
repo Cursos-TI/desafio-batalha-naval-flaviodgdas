@@ -10,6 +10,32 @@ int main() {
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
 
+    //desafio (batalha naval)
+    //dois navios posicionados em um tabuleiro de [5]x[5]
+    //onde Navio contraTorpedeiro estar na: ", "Posicao-X: 0", "Posicao-Y: 5"
+    //e Navio Rebocador estar na: ", "Posicao-X: 5", "Posicao-Y: 5"
+
+    //variaveis
+    int posicao;
+
+    char * navio [3][3] = {
+
+        {"Navio contraTorpedeiro estar na: ", "Posicao-X: 0", "Posicao-Y: 5"},
+        {"Navio Rebocador estar na: ", "Posicao-X: 5", "Posicao-Y: 5"}    
+         
+    };
+    //para verificar a posicao de cada navio, siga as instrucoes.
+    printf("======BEM VINDO AO DESAFIO BATALHA NAVAL-NOVADO======\n");
+    printf("           ********************             \n");
+    printf("Digite o numero referente ao navio para ver a sua posicao: \n");
+    printf("1->>Navio contraTorpedeiro Digite >>(0) \n");
+    printf("2->>Navio Rebocador Digite >>(1) \n");
+    printf("Navio: "); 
+
+    scanf("%d", &posicao);
+
+    printf("A posicao do %s %s, %s...\n", navio[posicao][0], navio[posicao][1], navio[posicao][2]);
+
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
     // Sugestão: Expanda o tabuleiro para uma matriz 10x10.
     // Sugestão: Posicione quatro navios no tabuleiro, incluindo dois na diagonal.
